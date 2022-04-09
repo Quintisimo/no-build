@@ -1,5 +1,6 @@
-import { render, html, injectGlobal } from './imports.js'
-import App from './components/App.js'
+/// <reference lib="dom" />
+import { render, html, injectGlobal } from "./imports.ts";
+import App from "./components/App.ts";
 
 injectGlobal`
   * {
@@ -15,6 +16,7 @@ injectGlobal`
     justify-content: center;
     align-items: center;
   }
-`
+`;
 
-render(html`<${App} />`, document.body)
+// @ts-expect-error: react, htm type mismatch
+render(html`<${App} />`, document.body);

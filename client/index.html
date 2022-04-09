@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-      // reload client on file change
-      const socket = io()
-      socket.on('reload', () => window.location.reload())
-    </script>
-    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.ts"></script>
   </head>
   <body></body>
 </html>
